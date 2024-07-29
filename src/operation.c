@@ -6,7 +6,7 @@
 /*   By: aafounas <aafounas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 18:17:02 by aafounas          #+#    #+#             */
-/*   Updated: 2024/07/24 17:58:22 by aafounas         ###   ########.fr       */
+/*   Updated: 2024/07/29 16:39:00 by aafounas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ void	rotate(int value, t_stack **stack)
 		return ;
 	*first = *stack;
 	*last = *stack;
-
 	while (last->next)
 		last = last->next;
 	*stack = first->next;
